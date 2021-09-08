@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Book Archive" />
+    <meta name="keywords" content="Book, Archive" />
+    <meta name="author" content="Md. Rifat Islam" />
+    <title>Book Archive</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/book-icon.svg" type="image/gif" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="bg-dark">
+    <!-- Header -->
+    <header>
+        <!-- Search Box -->
+        <h1 class="display-4 text-white text-center mt-4">SEARCH YOUR FAVORITE BOOK</h1>
+        <div class="input-group mb-3 mt-5 container">
+            <input type="text" class="form-control light-green-border bg-dark p-3 text-white" placeholder="Search Book"
+                id="search-text">
+            <button class="input-group-text light-green-bg pt-2 px-4 btn" id="search-btn">
+                <i class="fas fa-search text-white"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Spinner Section -->
+        <div class="text-center mt-5" id="spinner-container">
+            <div class="spinner-border light-green-text p-5" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Alert Section -->
+        <div class="alert alert-danger container mt-4" id="alert-section" role="alert"></div>
+
+        <!-- Total Books Found Section -->
+        <h6 class="display-6 light-green-text text-center mt-4" id="total-books"></h6>
+
+        <!-- Book Section -->
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="book-container">
+            </div>
+        </div>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- External Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

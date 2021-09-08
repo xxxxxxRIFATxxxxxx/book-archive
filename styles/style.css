@@ -1,0 +1,32 @@
+/* Common CSS */
+.light-green-text {
+    color: #11E1C2;
+}
+
+.light-green-bg {
+    background-color: #11E1C2;
+}
+
+.light-green-bg:hover {
+    background-color: #34e9ce;
+}
+
+.light-green-border {
+    border: 1px solid #11E1C2;
+}
+
+.shadow-box {
+    box-shadow: 0 4px 8px 0 rgba(17, 225, 194, 0.2), 0 6px 20px 0 rgba(17, 225, 194, 0.19);
+}
+
+.card {
+    cursor: pointer;
+}
+
+#spinner-container {
+    display: none;
+}
+
+#alert-section {
+    display: none;
+}
